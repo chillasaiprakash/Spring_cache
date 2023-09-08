@@ -22,7 +22,9 @@ public class ProductController {
     @PostMapping
     public Product save(@RequestBody Product product) {
 
+        System.out.println(product);
         return productService.saveProduct(product);
+
     }
 
     @GetMapping
